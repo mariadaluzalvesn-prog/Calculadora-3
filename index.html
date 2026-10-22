@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Dinosaur Evolution</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        #game-container {
+            width: 800px;
+            height: 200px;
+            background-color: #2e2e2e;
+            border: 2px solid #4CAF50;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .stats {
+            font-size: 18px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>IA Dinosaur Evolution</h1>
+    <p>Simulação de evolução e inteligência artificial baseada em HTML e JavaScript.</p>
+
+    <div class="stats">
+        Geração: <span id="geracao">1</span> | Melhor Distância: <span id="distancia">0</span>
+    </div>
+
+    <div id="game-container">
+        <!-- Aqui ficarão os elementos visuais da IA -->
+    </div>
+
+    <button onclick="iniciarEvolucao()">Iniciar Evolução</button>
+
+    <script>
+        function iniciarEvolucao() {
+            alert("A simulação da IA Dinosaur Evolution foi iniciada! Vamos programar os comportamentos dos dinossauros agora.");
+            // Aqui você adicionará a lógica da IA e da evolução das gerações
+            document.getElementById('geracao').innerText = "2";
+            document.getElementById('distancia').innerText = "150m";
+        }
+    </script>
+
+</body>
+</html>
